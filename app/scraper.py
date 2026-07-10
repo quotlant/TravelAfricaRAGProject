@@ -75,3 +75,4 @@ print(f"saved {len(safaris)} safari tours to safari_tours.csv")
 
     
     
+print(df["country"].value_counts())
