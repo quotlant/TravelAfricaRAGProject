@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Travel Africa AI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="app">
+      <div class="phone">
+        <header>
+          <h2>Travel AI</h2>
+          <p>Your Safari Companion</p>
+        </header>
+
+        <section id="chat-box">
+          <div class="welcome">
+            🌍
+            <h1>Hello Explorer</h1>
+            <p>Where should we travel today?</p>
+          </div>
+
+          <div class="cards">
+            <button onclick="quickAsk('Luxury safari in Kenya')">
+              🦁 Luxury Safari
+            </button>
+
+            <button onclick="quickAsk('Gorilla trekking Rwanda')">
+              🦍 Gorilla Trek
+            </button>
+
+            <button onclick="quickAsk('Beach holiday Zanzibar')">
+              🏝 Zanzibar
+            </button>
+
+            <button onclick="quickAsk('Affordable Tanzania tours')">
+              🏕 Budget Tours
+            </button>
+          </div>
+        </section>
+
+        <div class="input-area">
+          <input id="question" placeholder="Ask destinations, hotels..." />
+
+          <button onclick="askQuestion()">➤</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
