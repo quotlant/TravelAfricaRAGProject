@@ -1,67 +1,95 @@
-Travel Africa AI
+# Travel Africa AI
+
 This is a RAG (Retrieval-Augmented Generation) travel assistant that helps users discover African safari tours using semantic search and AI-generated responses.
 
-Features
--CSV data ingestion and cleaning.
--ChromaDB vector database.
--Search safari tours using natural language.
--Retrieves the most relevant tour information using vector embeddings.
--FastAPI backend.
--Generates AI-powered answers based on retrieved context.
--Interactive chat interface.
+## Features
 
-![Chat Interface for the Travel Africa AI](<Travel Africa AI.png>)
+- CSV data ingestion and cleaning.
+- ChromaDB vector database.
+- Search safari tours using natural language.
+- Retrieves the most relevant tour information using vector embeddings.
+- FastAPI backend.
+- Generates AI-powered answers based on retrieved context.
+- Interactive chat interface.
 
-Project Architecture
+![Chat Interface for the Travel Africa AI](images/Travel-Africa-AI.png)
+
+## Project Architecture
+
+```text
 CSV Dataset
-│
-▼
+
+      │
+
+      ▼
+
 Data Cleaning
-│
-▼
-Chunking
-│
-▼
-Embeddings
-│
-▼
+
+      │
+
+      ▼
+
+Text Chunking
+
+      │
+
+      ▼
+
+Embedding Generation
+
+      │
+
+      ▼
+
 ChromaDB
-│
-▼
+
+      │
+
+      ▼
+
 Semantic Search
-│
-▼
+
+      │
+
+      ▼
+
 Groq LLM
-│
-▼
+
+      │
+
+      ▼
+
 Frontend Chat UI
+```
 
-Tech Stack
+## Tech Stack
 
-Backend
+### Backend
 
-Python
-FastAPI
+- Python
+- FastAPI
 
-AI
+### AI
 
-Sentence Transformers
-ChromaDB
-Groq API
-RAG
+- Sentence Transformers
+- ChromaDB
+- Groq API
+- RAG
 
-Frontend
+### Frontend
 
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
-Data
+### Data
 
-Pandas
-CSV
+- Pandas
+- CSV
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 TravelAfricaRAGProject/
 │
 ├── app/
@@ -77,21 +105,36 @@ TravelAfricaRAGProject/
 ├── requirements.txt
 │
 └── README.md
+```
 
-⚙️ Installation
-git clone <repo-url>
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/quotlant/TravelAfricaRAGProject
 
 cd TravelAfricaRAGProject
 
 python -m venv venv
 
 source venv/bin/activate
+```
 
-Install depedencies
+## Install dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-RUN the API
+## RUN the API
+
+```bash
 uvicorn app.main:app --reload
+```
 
-OPEN:
-frontend/index.html
+## Run the Frontend
+
+Open `frontend/index.html` in your browser.
+
+## Why this project
+
+This project explores Retrieval-Augmented Generation (RAG) by combining semantic search with large language models to answer travel-related questions. It demonstrates how structured travel data can be transformed into an intelligent assistant capable of retrieving relevant safari tours and generating context-aware responses.
